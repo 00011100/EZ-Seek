@@ -49,7 +49,7 @@
 #
 ######################
 
-HEADER=('Authorization' 'Cache-Control' 'Cf-Connecting_ip' 'Client-Ip' 'Contact' 'Cookie' 'Forwarded-For-Ip' 'Forwarded-For' 'Forwarded' 'If-Modified-Since' 'Originating-Ip' 'Referer' 'True-Client-Ip' 'User-Agent' 'X-Api-Version' 'X-Client-Ip' 'X-Forwarded-For' 'X-Leakix' 'Authorization: Basic' 'Authorization: Bearer' 'Authorization: Oauth' 'Authorization: Token')
+HEADER=('Authorization' 'Origin' 'X-Druid-Comment' 'Location' 'Cache-Control' 'Cf-Connecting_ip' 'Client-Ip' 'Contact' 'Cookie' 'Forwarded-For-Ip' 'Forwarded-For' 'Forwarded' 'If-Modified-Since' 'Originating-Ip' 'Referer' 'True-Client-Ip' 'User-Agent' 'X-Api-Version' 'X-Client-Ip' 'X-Forwarded-For' 'X-Leakix' 'Authorization: Basic' 'Authorization: Bearer' 'Authorization: Oauth' 'Authorization: Token')
 
 DOMAIN=""
 URI="SOCTEAM-TEST"
