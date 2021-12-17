@@ -6,3 +6,5 @@ Just a quick bash script to check for services vuln to log4j. Although this can 
 
 Nmap script: https://github.com/Diverto/nse-log4shell
 Python script: https://github.com/fullhunt/log4j-scan
+
+:)
